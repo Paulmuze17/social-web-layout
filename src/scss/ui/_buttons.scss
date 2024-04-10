@@ -1,0 +1,20 @@
+.btn {
+    display: inline-block;
+    padding: var(--btn-padding);
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+
+    transition: opacity 300ms ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}

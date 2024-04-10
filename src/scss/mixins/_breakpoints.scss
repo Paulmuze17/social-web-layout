@@ -1,0 +1,42 @@
+// @media (max-width: 767px) {
+//     /* стили для xs-устройств */
+
+// }
+// @media (min-width: 768px) and (max-width: 991px) {
+//     /* стили для sm-устройств */
+// }
+
+// @media (min-width: 991px) and (max-width: 1199px) {
+//     /* стили для md-устройств */
+// }
+
+// @media (min-width: 1200px) {
+//       /* стили для lg-устройств */
+// }
+
+
+// @mixin desktop {
+//     @media (min-width: (1025px)) {
+//         @content;
+//     }
+// }
+
+// @mixin mobile {
+//     @media (max-width: (1024px)) {
+//         @content;
+//     }
+// }
+
+// variation 
+
+@mixin breakpoint($user-value) {
+    $my-map: map-get($breakpoints, $user-value);
+    @if ($my-map) {
+        @media (#{$my-map}) {
+            @content;
+        }
+    }@else {
+        @error "The breakpoint #{$user-value} doesn't exist";
+    }
+};
+

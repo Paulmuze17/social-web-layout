@@ -1,0 +1,41 @@
+// HEADINGS
+.heading-large {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: var(--color-dark);
+}
+
+.heading-big,
+.heading-big-white,
+.heading-big-black {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 120%;
+    color: var(--color-dark);
+    transition: color .2s ease-in-out;
+}
+
+.heading-big-white {
+    color: var(--color-white);
+
+}
+.heading-big-black {
+    color: var(--color-dark);
+}
+
+.heading-medium,
+.heading-medium-normal {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--color-dark);
+}
+
+.heading-medium-normal {
+    font-weight: normal;
+}
+
+.heading-small {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--color-dark);
+}

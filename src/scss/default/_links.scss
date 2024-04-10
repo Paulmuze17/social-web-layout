@@ -1,0 +1,72 @@
+// LINKS
+.link,
+.link-small,
+.link-medium,
+.link-big,
+.link-large,
+.link-medium-blue,
+.link-medium-white,
+.link-big-accent,
+.link-section {
+    font-size: 1.125rem;
+    font-weight: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: color .3s ease-in-out;
+
+    &:hover,
+    &:focus {
+        color: red;
+    }
+}
+
+.link-small {
+    font-size: 1rem;
+    // font-weight: bold;
+    color: #fff;
+}
+
+.link-medium {
+    font-size: 1.125rem;
+    color: #000;
+}
+.link-medium-blue {
+    color: #000;
+}
+.link-medium-white {
+    color: #fff;
+}
+
+.link-big,
+.link-big-accent {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+}
+.link-big-accent {
+    color: #000;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        color: #000;
+    }
+}
+
+.link-large {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.link-section {
+    font-weight: bold;
+    text-decoration: underline;
+    color: red;
+
+    &:hover,
+    &:focus {
+        color: #000;
+    }
+}
+// 

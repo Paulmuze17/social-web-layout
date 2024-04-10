@@ -1,0 +1,88 @@
+// сброс стилей
+// @import './vendor/reset';
+// @import './vendor/normalize';
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+body {
+    // min-height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+    // font-size: 18px;
+
+    background-color: var(--color-light);
+
+    overflow-x: hidden;
+}
+
+// Если не используется сетка (bstrp), то используется контейнер
+// .container {
+//     max-width: 1200px;
+//     padding: 0 15px;
+//     margin: 0 auto;
+// }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.site-container {
+    overflow: hidden;
+}
+
+.stop-scroll {
+    @include stop-scroll;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.for-mobile {
+    display: none;
+
+    @include breakpoint(sm) {
+        display: block;
+    }
+}
+
+.error {
+    border: 2px solid red !important;
+}
+
+.visually-hidden {
+    @include visually-hidden;
+}
+
+.btn--reset {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.text-align-center {
+    text-align: center;
+}
+

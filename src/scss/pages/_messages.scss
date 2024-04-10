@@ -1,0 +1,65 @@
+.messages-wrapper {
+    padding: 10px 20px;
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+}
+
+.messages__search-box {
+    margin-bottom: 20px;
+}
+
+.messages-item {
+    padding: 10px 0;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-light);
+}
+
+.messages__profile-photo {
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.messages__text-container {
+    width: 100%;
+    text-align: start;
+}
+
+.messages__text-user {
+    text-transform: capitalize;
+}
+
+.messages__text {
+
+}
+.messages__text--unread {
+    padding: 3px 10px;
+    background-color: var(--color-light);
+    border-radius: 5px;
+}
+
+.messages__date-container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.messages__date-count {
+    // margin: auto;
+    // display: flex;
+    // align-self: center;
+    // justify-content: center;
+    background-color: var(--color-light);
+    border-radius: 50%;
+    // padding: 5px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    // color: var(--color-primary);
+}
