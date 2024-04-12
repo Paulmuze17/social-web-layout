@@ -1,0 +1,32 @@
+[
+    {
+        "user": 1,
+        "name": "",
+        "image": "/assets/images/stories/story-1.jpg"
+    },
+    {
+        "user": 6,
+        "name": "",
+        "image": "/assets/images/stories/story-2.jpg"
+    },
+    {
+        "user": 11,
+        "name": "",
+        "image": "/assets/images/stories/story-3.jpg"
+    },
+    {
+        "user": 6,
+        "name": "",
+        "image": "/assets/images/stories/story-4.jpg"
+    },
+    {
+        "user": 4,
+        "name": "",
+        "image": "/assets/images/stories/story-5.jpg"
+    },
+    {
+        "user": 9,
+        "name": "",
+        "image": "/assets/images/stories/story-6.jpg"
+    },
+]

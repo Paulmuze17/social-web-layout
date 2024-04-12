@@ -17,7 +17,7 @@
 
 .content-main {
 	position: relative;
-	padding-top: 5.4rem;
+	padding-top: 6.5rem;
 
 }
 .content-main__container {
@@ -188,6 +188,7 @@
 	color: var(--color-white);
 	font-size: 0.75rem;
 	border-radius: var(--card-border-radius);
+	background-color: var(--color-white);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -207,7 +208,9 @@
 }
 
 .story__name {
+	text-align: center;
 	z-index: 2;
+	text-transform: capitalize;
 }
 
 .story:nth-child(1) {
@@ -233,7 +236,18 @@
 	width: 2rem;
 	height: 2rem;
 	// align-self: start;
+	// outline: 2px solid transparent;
+	border: 3px solid var(--color-light);
+	transition: border .3s ease-in-out;
+	cursor: pointer;
+
+}
+.story__profile-photo:hover {
+	width: 2rem;
+	height: 2rem;
+	// align-self: start;
 	border: 3px solid var(--color-primary);
+
 }
 
 .create-post {
@@ -286,6 +300,8 @@
 	margin: 0.7rem 0;
 	border-radius: var(--card-border-radius);
 	overflow: hidden;
+	min-height: 320px;
+	background-color: var(--color-light);
 }
 
 .action-buttons {
@@ -298,6 +314,9 @@
 
 .liked-by {
 	display: flex;
+}
+.post__liked-by-wrapper {
+	margin-bottom: 5px;
 }
 
 .liked-by__img-container {
@@ -380,6 +399,9 @@
 .profile-photo {
 	position: relative;
 	overflow: visible;
+	background-color: var(--color-light);
+	cursor: pointer;
+
 }
 
 .profile-photo__img {
@@ -429,7 +451,7 @@
 .request-btns {
 	display: flex;
 	gap: 1rem;
-	
+	justify-content: center
 }
 
 
