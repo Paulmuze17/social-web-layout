@@ -1,911 +1,744 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>SocialLand - social website</title>
-		<link rel="stylesheet" href="/assets/css/main.css" />
-		<link
-			rel="stylesheet"
-			href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-		/>
-	</head>
-	<body>
-		<header>
-    <nav class="header">
-        <div class="container header__container">
-            <h2 class="logo"><a href="/">logoSocial</a></h2>
-            <div class="search-bar">
-                <i class="uil uil-search"></i>
-                <input
-                    class="search-input search-bar__input"
-                    type="search"
-                    placeholder="Search for creator, inspirations and projects"
-                />
-            </div>
-            <div class="create header__create">
-                <label class="btn btn-primary" for="#createPosts">Create</label>
-                <div class="profile-photo">
-                    <a href="/profile.html"><img class="profile-photo__img" src="/assets/images/profile/photos/profile-image-1.jpg" alt="Profile Picture" /></a>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
 
-		<main class="content-main">
-			<div class="container content-main__container">
-				<section class="section-left">
-    <a class="profile" href="/profile.html">
-        <div class="profile-photo">
-            <img class="profile-photo__img" src="/assets/images/profile/photos/profile-image-1.jpg" alt="Profile Picture" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SocialLand - social website</title>
+  <link rel="stylesheet" href="/social-web-layout/assets/css/main.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="header">
+      <div class="container header__container">
+        <h2 class="logo"><a href="/">logoSocial</a></h2>
+        <div class="search-bar">
+          <i class="uil uil-search"></i>
+          <input class="search-input search-bar__input" type="search"
+            placeholder="Search for creator, inspirations and projects" />
         </div>
-        <div class="handle">
+        <div class="create header__create">
+          <label class="btn btn-primary" for="#createPosts">Create</label>
+          <div class="profile-photo">
+            <a href="/profile.html">
+              <img
+                class="profile-photo__img"
+                src="/social-web-layout/assets/images/profile/photos/profile-image-1.jpg"
+                alt="Profile Picture" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content-main">
+    <div class="container content-main__container">
+      <section class="section-left">
+        <a class="profile" href="/profile.html">
+          <div class="profile-photo">
+            <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-1.jpg"
+              alt="Profile Picture" />
+          </div>
+          <div class="handle">
             <h4>Laverne Hartley</h4>
             <p class="text-muted">@laverne_hartley_1992</p>
-        </div>
-    </a>
-    <div class="sidebar main-menu">
-        <a class="main-menu__item main-menu__item--active" href="/">
+          </div>
+        </a>
+        <div class="sidebar main-menu">
+          <a class="main-menu__item main-menu__item--active" href="/">
             <span><i class="main-menu__icon uil uil-home"></i></span>
             <h3 class="main-menu__title">Home</h3>
-        </a>
+          </a>
 
-        <a class="main-menu__item" href="#">
+          <a class="main-menu__item" href="#">
             <span><i class="main-menu__icon uil uil-compass"></i></span>
             <h3 class="main-menu__title">Explore</h3>
-        </a>
-        <a id="notifications" class="main-menu__item" href="#">
-            <span
-                ><i class="main-menu__icon uil uil-bell"
-                    ><small class="notification-count">9+</small></i
-                ></span
-            >
+          </a>
+          <a id="notifications" class="main-menu__item" href="#">
+            <span><i class="main-menu__icon uil uil-bell"><small class="notification-count">9+</small></i></span>
             <h3 class="main-menu__title">Notifications</h3>
             <div class="notifications-popup is-hidden">
-                <div class="notifications-popup__item">
-                    <div class="profile-photo">
-                        <img class="profile-photo__img"
-                            src="/assets/images/profile/photos/profile-image-2.jpg"
-                            alt="Profile Picture"
-                        />
-                    </div>
-                    <div class="notification-body">
-                        <b>Joselyn Abe</b> accepted your friend request
-                        <small
-                            class="notifications-popup__item-text-small text-muted"
-                            >56 MINUTS AGO</small
-                        >
-                    </div>
+              <div class="notifications-popup__item">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-2.jpg"
+                    alt="Profile Picture" />
                 </div>
-                <div class="notifications-popup__item">
-                    <div class="profile-photo">
-                        <img class="profile-photo__img"
-                            src="/assets/images/profile/photos/profile-image-3.jpg"
-                            alt="Profile Picture"
-                        />
-                    </div>
-                    <div class="notification-body">
-                        <b>Samson Johanne</b> accepted your friend request
-                        <small
-                            class="notifications-popup__item-text-small text-muted"
-                            >4 HOURS AGO</small
-                        >
-                    </div>
+                <div class="notification-body">
+                  <b>Joselyn Abe</b> accepted your friend request
+                  <small class="notifications-popup__item-text-small text-muted">56 MINUTS AGO</small>
                 </div>
-                <div class="notifications-popup__item">
-                    <div class="profile-photo">
-                        <img class="profile-photo__img"
-                            src="/assets/images/profile/photos/profile-image-4.jpg"
-                            alt="Profile Picture"
-                        />
-                    </div>
-                    <div class="notification-body">
-                        <b>Franklin Vinzent</b> accepted your friend request
-                        <small
-                            class="notifications-popup__item-text-small text-muted"
-                            >1 DAY AGO</small
-                        >
-                    </div>
+              </div>
+              <div class="notifications-popup__item">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-3.jpg"
+                    alt="Profile Picture" />
                 </div>
-                <div class="notifications-popup__item">
-                    <div class="profile-photo">
-                        <img class="profile-photo__img"
-                            src="/assets/images/profile/photos/profile-image-5.jpg"
-                            alt="Profile Picture"
-                        />
-                    </div>
-                    <div class="notification-body">
-                        <b style="color: black">Mayme Finley</b> accepted your friend
-                        request
-                        <small
-                            class="notifications-popup__item-text-small text-muted"
-                            >2 DAYS AGO</small
-                        >
-                    </div>
+                <div class="notification-body">
+                  <b>Samson Johanne</b> accepted your friend request
+                  <small class="notifications-popup__item-text-small text-muted">4 HOURS AGO</small>
                 </div>
-                <div class="notifications-popup__item">
-                    <div class="profile-photo">
-                        <img class="profile-photo__img"
-                            src="/assets/images/profile/photos/profile-image-6.jpg"
-                            alt="Profile Picture"
-                        />
-                    </div>
-                    <div class="notification-body">
-                        <b>Eddie Karl</b> accepted your friend request
-                        <small
-                            class="notifications-popup__item-text-small text-muted"
-                            >2 DAYS AGO</small
-                        >
-                    </div>
+              </div>
+              <div class="notifications-popup__item">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-4.jpg"
+                    alt="Profile Picture" />
                 </div>
-                <div class="notifications-popup__item">
-                    <div class="profile-photo">
-                        <img class="profile-photo__img"
-                            src="/assets/images/profile/photos/profile-image-7.jpg"
-                            alt="Profile Picture"
-                        />
-                    </div>
-                    <div class="notification-body">
-                        <b>Bergljot Carlisa</b> accepted your friend request
-                        <small
-                            class="notifications-popup__item-text-small text-muted"
-                            >4 DAYS AGO</small
-                        >
-                    </div>
+                <div class="notification-body">
+                  <b>Franklin Vinzent</b> accepted your friend request
+                  <small class="notifications-popup__item-text-small text-muted">1 DAY AGO</small>
                 </div>
+              </div>
+              <div class="notifications-popup__item">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-5.jpg"
+                    alt="Profile Picture" />
+                </div>
+                <div class="notification-body">
+                  <b style="color: black">Mayme Finley</b> accepted your
+                  friend request
+                  <small class="notifications-popup__item-text-small text-muted">2 DAYS AGO</small>
+                </div>
+              </div>
+              <div class="notifications-popup__item">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-6.jpg"
+                    alt="Profile Picture" />
+                </div>
+                <div class="notification-body">
+                  <b>Eddie Karl</b> accepted your friend request
+                  <small class="notifications-popup__item-text-small text-muted">2 DAYS AGO</small>
+                </div>
+              </div>
+              <div class="notifications-popup__item">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-7.jpg"
+                    alt="Profile Picture" />
+                </div>
+                <div class="notification-body">
+                  <b>Bergljot Carlisa</b> accepted your friend request
+                  <small class="notifications-popup__item-text-small text-muted">4 DAYS AGO</small>
+                </div>
+              </div>
             </div>
-        </a>
-        <a id="messages-notification" class="main-menu__item" href="/messages.html">
-            <span
-                ><i class="main-menu__icon uil uil-envelope"
-                    ><small class="notification-count">6</small></i
-                ></span
-            >
+          </a>
+          <a id="messages-notification" class="main-menu__item" href="/messages.html">
+            <span><i class="main-menu__icon uil uil-envelope"><small class="notification-count">6</small></i></span>
             <h3 class="main-menu__title">Messages</h3>
-        </a>
-        <a class="main-menu__item" href="#">
+          </a>
+          <a class="main-menu__item" href="#">
             <span><i class="main-menu__icon uil uil-bookmark"></i></span>
             <h3 class="main-menu__title">Bookmarks</h3>
-        </a>
-        <a class="main-menu__item" href="#">
+          </a>
+          <a class="main-menu__item" href="#">
             <span><i class="main-menu__icon uil uil-chart-line"></i></span>
             <h3 class="main-menu__title">Analitycs</h3>
-        </a>
-        <a id="theme-btn" class="main-menu__item" href="#">
+          </a>
+          <a id="theme-btn" class="main-menu__item" href="#">
             <span><i class="main-menu__icon uil uil-palette"></i></span>
             <h3 class="main-menu__title">Theme</h3>
-        </a>
-        <a class="main-menu__item" href="#">
+          </a>
+          <a class="main-menu__item" href="#">
             <span><i class="main-menu__icon uil uil-setting"></i></span>
             <h3 class="main-menu__title">Settings</h3>
-        </a>
-    
-    </div>
-    <button class="btn btn-primary main-menu__btn"
-    >Create Posts</button
->
-</section>
+          </a>
+        </div>
+        <button class="btn btn-primary main-menu__btn">Create Posts</button>
+      </section>
 
-				<section class="section-middle">
-					<div class="stories">
-						<div class="story" data-image="/assets/images/profile/stories/story-1.jpg">
-							<div class="profile-photo story__profile-photo">
-								<img class="profile-photo__img" src="/assets/images/profile/photos/profile-image-1.jpg" alt="Profile Picture" />
-							</div>
-							<p class="story__name">laverne hartley</p>
-						</div>
-						<div class="story" data-image="/assets/images/profile/stories/story-2.jpg">
-							<div class="profile-photo story__profile-photo">
-								<img class="profile-photo__img" src="/assets/images/profile/photos/profile-image-2.jpg" alt="Profile Picture" />
-							</div>
-							<p class="story__name">Joselyn Abe</p>
-						</div>
-						<div class="story" data-image="/assets/images/profile/stories/story-3.jpg">
-							<div class="profile-photo story__profile-photo">
-								<img class="profile-photo__img" src="/assets/images/profile/photos/profile-image-4.jpg" alt="Profile Picture" />
-							</div>
-							<p class="story__name">Franklin Vinzent</p>
-						</div>
-						<div class="story" data-image="/assets/images/profile/stories/story-4.jpg">
-							<div class="profile-photo story__profile-photo">
-								<img class="profile-photo__img" src="/assets/images/profile/photos/profile-image-5.jpg" alt="Profile Picture" />
-							</div>
-							<p class="story__name">Mayme Finley</p>
-						</div>
-						<div class="story" data-image="/assets/images/profile/stories/story-5.jpg">
-							<div class="profile-photo story__profile-photo">
-								<img class="profile-photo__img" src="/assets/images/profile/photos/profile-image-7.jpg" alt="Profile Picture" />
-							</div>
-							<p class="story__name">Bergljot Carlisa</p>
-						</div>
-						<div class="story" data-image="/assets/images/profile/stories/story-6.jpg">
-							<div class="profile-photo story__profile-photo">
-								<img class="profile-photo__img" src="/assets/images/profile/photos/profile-image-8.jpg" alt="Profile Picture" />
-							</div>
-							<p class="story__name">Lisbeth Riley</p>
-						</div>
-					</div>
-					<form class="create-post">
-						<div class="profile-photo">
-							<img class="profile-photo__img" src="/assets/images/profile/photos/profile-image-1.jpg" alt="Profile Picture" />
-						</div>
-						<input
-							id="create-post"
-							class="create-post-input"
-							type="text"
-							placeholder="What's on your mind, Laverne Hartley?"
-						/>
-						<input class="btn btn-primary" type="submit" value="post" />
-					</form>
-					<div class="feeds">
-						<div class="feed">
-							<div class="head">
-								<div class="user">
-									<div class="profile-photo">
-										<img class="profile-photo__img"
-											src="/assets/images/profile/photos/profile-image-2.jpg"
-											alt="Profile Picture"
-										/>
-									</div>
-									<div class="info">
-										<h3>Joselyn Abe</h3>
-										<small>Dubai, 3 MINUTES AGO</small>
-									</div>
-								</div>
-								<span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-							</div>
-							<div class="photo">
-								<img src="/assets/images/posts/feed-1.jpg" alt="" />
-							</div>
-							<div class="action-buttons">
-								<div class="interaction-buttons">
-									<span class=""><i class="uil uil-heart"></i></span>
-									<span class=""><i class="uil uil-comment-dots"></i></span>
-									<span class=""><i class="uil uil-share-alt"></i></span>
-								</div>
-								<div class="bookmark-button">
-									<span class=""><i class="uil uil-bookmark-full"></i></span>
-								</div>
-							</div>
-							<div class="liked-by post__liked-by-wrapper">
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-10.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-16.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-12.jpg"
-										alt=""
-								/></span>
-								<p class="liked-by__info">
-									Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
-								</p>
-							</div>
-							<div class="caption">
-								<p>
-									<b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Aliquid.
-									<span class="harsh-tag">#lifestyle</span>
-								</p>
-							</div>
-							<div class="comments text-muted">View all 277 comments</div>
-						</div>
-						<div class="feed">
-							<div class="head">
-								<div class="user">
-									<div class="profile-photo">
-										<img class="profile-photo__img"
-											src="/assets/images/profile/photos/profile-image-3.jpg"
-											alt="Profile Picture"
-										/>
-									</div>
-									<div class="info">
-										<h3>Samson Johanne</h3>
-										<small>London, 15 MINUTES AGO</small>
-									</div>
-								</div>
-								<span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-							</div>
-							<div class="photo">
-								<img src="/assets/images/posts/feed-2.jpg" alt="" />
-							</div>
-							<div class="action-buttons">
-								<div class="interaction-buttons">
-									<span class=""><i class="uil uil-heart"></i></span>
-									<span class=""><i class="uil uil-comment-dots"></i></span>
-									<span class=""><i class="uil uil-share-alt"></i></span>
-								</div>
-								<div class="bookmark-button">
-									<span class=""><i class="uil uil-bookmark-full"></i></span>
-								</div>
-							</div>
-							<div class="liked-by post__liked-by-wrapper">
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-6.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-2.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-17.jpg"
-										alt=""
-								/></span>
-								<p class="liked-by__info">
-									Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
-								</p>
-							</div>
-							<div class="caption">
-								<p>
-									<b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Aliquid.
-									<span class="harsh-tag">#lifestyle</span>
-								</p>
-							</div>
-							<div class="comments text-muted">View all 277 comments</div>
-						</div>
-						<div class="feed">
-							<div class="head">
-								<div class="user">
-									<div class="profile-photo">
-										<img class="profile-photo__img"
-											src="/assets/images/profile/photos/profile-image-4.jpg"
-											alt="Profile Picture"
-										/>
-									</div>
-									<div class="info">
-										<h3>Franklin Vinzent</h3>
-										<small>New York, 18 MINUTES AGO</small>
-									</div>
-								</div>
-								<span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-							</div>
-							<div class="photo">
-								<img src="/assets/images/posts/feed-3.jpg" alt="" />
-							</div>
-							<div class="action-buttons">
-								<div class="interaction-buttons">
-									<span class=""><i class="uil uil-heart"></i></span>
-									<span class=""><i class="uil uil-comment-dots"></i></span>
-									<span class=""><i class="uil uil-share-alt"></i></span>
-								</div>
-								<div class="bookmark-button">
-									<span class=""><i class="uil uil-bookmark-full"></i></span>
-								</div>
-							</div>
-							<div class="liked-by post__liked-by-wrapper">
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-7.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-8.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-15.jpg"
-										alt=""
-								/></span>
-								<p class="liked-by__info">
-									Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
-								</p>
-							</div>
-							<div class="caption">
-								<p>
-									<b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Aliquid.
-									<span class="harsh-tag">#lifestyle</span>
-								</p>
-							</div>
-							<div class="comments text-muted">View all 277 comments</div>
-						</div>
-						<div class="feed">
-							<div class="head">
-								<div class="user">
-									<div class="profile-photo">
-										<img class="profile-photo__img"
-											src="/assets/images/profile/photos/profile-image-5.jpg"
-											alt="Profile Picture"
-										/>
-									</div>
-									<div class="info">
-										<h3>Mayme Finley</h3>
-										<small>20 MINUTES AGO</small>
-									</div>
-								</div>
-								<span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-							</div>
-							<div class="photo">
-								<img src="/assets/images/posts/feed-4.jpg" alt="" />
-							</div>
-							<div class="action-buttons">
-								<div class="interaction-buttons">
-									<span class=""><i class="uil uil-heart"></i></span>
-									<span class=""><i class="uil uil-comment-dots"></i></span>
-									<span class=""><i class="uil uil-share-alt"></i></span>
-								</div>
-								<div class="bookmark-button">
-									<span class=""><i class="uil uil-bookmark-full"></i></span>
-								</div>
-							</div>
-							<div class="liked-by post__liked-by-wrapper">
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-6.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-9.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-13.jpg"
-										alt=""
-								/></span>
-								<p class="liked-by__info">
-									Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
-								</p>
-							</div>
-							<div class="caption">
-								<p>
-									<b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Aliquid.
-									<span class="harsh-tag">#lifestyle</span>
-								</p>
-							</div>
-							<div class="comments text-muted">View all 277 comments</div>
-						</div>
-						<div class="feed">
-							<div class="head">
-								<div class="user">
-									<div class="profile-photo">
-										<img class="profile-photo__img"
-											src="/assets/images/profile/photos/profile-image-6.jpg"
-											alt="Profile Picture"
-										/>
-									</div>
-									<div class="info">
-										<h3>Eddie Karl</h3>
-										<small>24 MINUTES AGO</small>
-									</div>
-								</div>
-								<span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-							</div>
-							<div class="photo">
-								<img src="/assets/images/posts/feed-5.jpg" alt="" />
-							</div>
-							<div class="action-buttons">
-								<div class="interaction-buttons">
-									<span class=""><i class="uil uil-heart"></i></span>
-									<span class=""><i class="uil uil-comment-dots"></i></span>
-									<span class=""><i class="uil uil-share-alt"></i></span>
-								</div>
-								<div class="bookmark-button">
-									<span class=""><i class="uil uil-bookmark-full"></i></span>
-								</div>
-							</div>
-							<div class="liked-by post__liked-by-wrapper">
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-9.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-13.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-15.jpg"
-										alt=""
-								/></span>
-								<p class="liked-by__info">
-									Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
-								</p>
-							</div>
-							<div class="caption">
-								<p>
-									<b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Aliquid.
-									<span class="harsh-tag">#lifestyle</span>
-								</p>
-							</div>
-							<div class="comments text-muted">View all 277 comments</div>
-						</div>
-						<div class="feed">
-							<div class="head">
-								<div class="user">
-									<div class="profile-photo">
-										<img class="profile-photo__img"
-											src="/assets/images/profile/photos/profile-image-7.jpg"
-											alt="Profile Picture"
-										/>
-									</div>
-									<div class="info">
-										<h3>Bergljot Carlisa</h3>
-										<small>26 MINUTES AGO</small>
-									</div>
-								</div>
-								<span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-							</div>
-							<div class="photo">
-								<img src="/assets/images/posts/feed-6.jpg" alt="" />
-							</div>
-							<div class="action-buttons">
-								<div class="interaction-buttons">
-									<span class=""><i class="uil uil-heart"></i></span>
-									<span class=""><i class="uil uil-comment-dots"></i></span>
-									<span class=""><i class="uil uil-share-alt"></i></span>
-								</div>
-								<div class="bookmark-button">
-									<span class=""><i class="uil uil-bookmark-full"></i></span>
-								</div>
-							</div>
-							<div class="liked-by post__liked-by-wrapper">
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-3.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-8.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-12.jpg"
-										alt=""
-								/></span>
-								<p class="liked-by__info">
-									Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
-								</p>
-							</div>
-							<div class="caption">
-								<p>
-									<b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Aliquid.
-									<span class="harsh-tag">#lifestyle</span>
-								</p>
-							</div>
-							<div class="comments text-muted">View all 277 comments</div>
-						</div>
-						<div class="feed">
-							<div class="head">
-								<div class="user">
-									<div class="profile-photo">
-										<img class="profile-photo__img"
-											src="/assets/images/profile/photos/profile-image-8.jpg"
-											alt="Profile Picture"
-										/>
-									</div>
-									<div class="info">
-										<h3>Lisbeth Riley</h3>
-										<small>1 DAY AGO</small>
-									</div>
-								</div>
-								<span class="edit"><i class="uil uil-ellipsis-h"></i></span>
-							</div>
-							<div class="photo">
-								<img src="/assets/images/posts/feed-7.jpg" alt="" />
-							</div>
-							<div class="action-buttons">
-								<div class="interaction-buttons">
-									<span class=""><i class="uil uil-heart"></i></span>
-									<span class=""><i class="uil uil-comment-dots"></i></span>
-									<span class=""><i class="uil uil-share-alt"></i></span>
-								</div>
-								<div class="bookmark-button">
-									<span class=""><i class="uil uil-bookmark-full"></i></span>
-								</div>
-							</div>
-							<div class="liked-by post__liked-by-wrapper">
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-3.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-5.jpg"
-										alt=""
-								/></span>
-								<span class="liked-by__img-container"
-									><img class="profile-photo__img"
-										class="profile-photo"
-										src="/assets/images/profile/photos/profile-image-11.jpg"
-										alt=""
-								/></span>
-								<p class="liked-by__info">
-									Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
-								</p>
-							</div>
-							<div class="caption">
-								<p>
-									<b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
-									adipisicing elit. Aliquid.
-									<span class="harsh-tag">#lifestyle</span>
-								</p>
-							</div>
-							<div class="comments text-muted">View all 277 comments</div>
-						</div>
-					</div>
-				</section>
+      <section class="section-middle">
+        <div class="stories">
+          <div class="story" data-image="/social-web-layout/assets/images/profile/stories/story-1.jpg">
+            <div class="profile-photo story__profile-photo">
+              <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-1.jpg"
+                alt="Profile Picture" />
+            </div>
+            <p class="story__name">laverne hartley</p>
+          </div>
+          <div class="story" data-image="/social-web-layout/assets/images/profile/stories/story-2.jpg">
+            <div class="profile-photo story__profile-photo">
+              <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-2.jpg"
+                alt="Profile Picture" />
+            </div>
+            <p class="story__name">Joselyn Abe</p>
+          </div>
+          <div class="story" data-image="/social-web-layout/assets/images/profile/stories/story-3.jpg">
+            <div class="profile-photo story__profile-photo">
+              <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-4.jpg"
+                alt="Profile Picture" />
+            </div>
+            <p class="story__name">Franklin Vinzent</p>
+          </div>
+          <div class="story" data-image="/social-web-layout/assets/images/profile/stories/story-4.jpg">
+            <div class="profile-photo story__profile-photo">
+              <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-5.jpg"
+                alt="Profile Picture" />
+            </div>
+            <p class="story__name">Mayme Finley</p>
+          </div>
+          <div class="story" data-image="/social-web-layout/assets/images/profile/stories/story-5.jpg">
+            <div class="profile-photo story__profile-photo">
+              <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-7.jpg"
+                alt="Profile Picture" />
+            </div>
+            <p class="story__name">Bergljot Carlisa</p>
+          </div>
+          <div class="story" data-image="/social-web-layout/assets/images/profile/stories/story-6.jpg">
+            <div class="profile-photo story__profile-photo">
+              <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-8.jpg"
+                alt="Profile Picture" />
+            </div>
+            <p class="story__name">Lisbeth Riley</p>
+          </div>
+        </div>
+        <form class="create-post">
+          <div class="profile-photo">
+            <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-1.jpg"
+              alt="Profile Picture" />
+          </div>
+          <input id="create-post" class="create-post-input" type="text"
+            placeholder="What's on your mind, Laverne Hartley?" />
+          <input class="btn btn-primary" type="submit" value="post" />
+        </form>
+        <div class="feeds">
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-2.jpg"
+                    alt="Profile Picture" />
+                </div>
+                <div class="info">
+                  <h3>Joselyn Abe</h3>
+                  <small>Dubai, 3 MINUTES AGO</small>
+                </div>
+              </div>
+              <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+            </div>
+            <div class="photo">
+              <img src="/social-web-layout/assets/images/posts/feed-1.jpg" alt="" />
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span class=""><i class="uil uil-heart"></i></span>
+                <span class=""><i class="uil uil-comment-dots"></i></span>
+                <span class=""><i class="uil uil-share-alt"></i></span>
+              </div>
+              <div class="bookmark-button">
+                <span class=""><i class="uil uil-bookmark-full"></i></span>
+              </div>
+            </div>
+            <div class="liked-by post__liked-by-wrapper">
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-10.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-16.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-12.jpg" alt="" /></span>
+              <p class="liked-by__info">
+                Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
+              </p>
+            </div>
+            <div class="caption">
+              <p>
+                <b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Aliquid.
+                <span class="harsh-tag">#lifestyle</span>
+              </p>
+            </div>
+            <div class="comments text-muted">View all 277 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-3.jpg"
+                    alt="Profile Picture" />
+                </div>
+                <div class="info">
+                  <h3>Samson Johanne</h3>
+                  <small>London, 15 MINUTES AGO</small>
+                </div>
+              </div>
+              <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+            </div>
+            <div class="photo">
+              <img src="/social-web-layout/assets/images/posts/feed-2.jpg" alt="" />
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span class=""><i class="uil uil-heart"></i></span>
+                <span class=""><i class="uil uil-comment-dots"></i></span>
+                <span class=""><i class="uil uil-share-alt"></i></span>
+              </div>
+              <div class="bookmark-button">
+                <span class=""><i class="uil uil-bookmark-full"></i></span>
+              </div>
+            </div>
+            <div class="liked-by post__liked-by-wrapper">
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-6.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-2.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-17.jpg" alt="" /></span>
+              <p class="liked-by__info">
+                Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
+              </p>
+            </div>
+            <div class="caption">
+              <p>
+                <b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Aliquid.
+                <span class="harsh-tag">#lifestyle</span>
+              </p>
+            </div>
+            <div class="comments text-muted">View all 277 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-4.jpg"
+                    alt="Profile Picture" />
+                </div>
+                <div class="info">
+                  <h3>Franklin Vinzent</h3>
+                  <small>New York, 18 MINUTES AGO</small>
+                </div>
+              </div>
+              <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+            </div>
+            <div class="photo">
+              <img src="/social-web-layout/assets/images/posts/feed-3.jpg" alt="" />
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span class=""><i class="uil uil-heart"></i></span>
+                <span class=""><i class="uil uil-comment-dots"></i></span>
+                <span class=""><i class="uil uil-share-alt"></i></span>
+              </div>
+              <div class="bookmark-button">
+                <span class=""><i class="uil uil-bookmark-full"></i></span>
+              </div>
+            </div>
+            <div class="liked-by post__liked-by-wrapper">
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-7.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-8.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-15.jpg" alt="" /></span>
+              <p class="liked-by__info">
+                Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
+              </p>
+            </div>
+            <div class="caption">
+              <p>
+                <b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Aliquid.
+                <span class="harsh-tag">#lifestyle</span>
+              </p>
+            </div>
+            <div class="comments text-muted">View all 277 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-5.jpg"
+                    alt="Profile Picture" />
+                </div>
+                <div class="info">
+                  <h3>Mayme Finley</h3>
+                  <small>20 MINUTES AGO</small>
+                </div>
+              </div>
+              <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+            </div>
+            <div class="photo">
+              <img src="/social-web-layout/assets/images/posts/feed-4.jpg" alt="" />
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span class=""><i class="uil uil-heart"></i></span>
+                <span class=""><i class="uil uil-comment-dots"></i></span>
+                <span class=""><i class="uil uil-share-alt"></i></span>
+              </div>
+              <div class="bookmark-button">
+                <span class=""><i class="uil uil-bookmark-full"></i></span>
+              </div>
+            </div>
+            <div class="liked-by post__liked-by-wrapper">
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-6.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-9.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-13.jpg" alt="" /></span>
+              <p class="liked-by__info">
+                Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
+              </p>
+            </div>
+            <div class="caption">
+              <p>
+                <b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Aliquid.
+                <span class="harsh-tag">#lifestyle</span>
+              </p>
+            </div>
+            <div class="comments text-muted">View all 277 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-6.jpg"
+                    alt="Profile Picture" />
+                </div>
+                <div class="info">
+                  <h3>Eddie Karl</h3>
+                  <small>24 MINUTES AGO</small>
+                </div>
+              </div>
+              <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+            </div>
+            <div class="photo">
+              <img src="/social-web-layout/assets/images/posts/feed-5.jpg" alt="" />
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span class=""><i class="uil uil-heart"></i></span>
+                <span class=""><i class="uil uil-comment-dots"></i></span>
+                <span class=""><i class="uil uil-share-alt"></i></span>
+              </div>
+              <div class="bookmark-button">
+                <span class=""><i class="uil uil-bookmark-full"></i></span>
+              </div>
+            </div>
+            <div class="liked-by post__liked-by-wrapper">
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-9.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-13.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-15.jpg" alt="" /></span>
+              <p class="liked-by__info">
+                Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
+              </p>
+            </div>
+            <div class="caption">
+              <p>
+                <b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Aliquid.
+                <span class="harsh-tag">#lifestyle</span>
+              </p>
+            </div>
+            <div class="comments text-muted">View all 277 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-7.jpg"
+                    alt="Profile Picture" />
+                </div>
+                <div class="info">
+                  <h3>Bergljot Carlisa</h3>
+                  <small>26 MINUTES AGO</small>
+                </div>
+              </div>
+              <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+            </div>
+            <div class="photo">
+              <img src="/social-web-layout/assets/images/posts/feed-6.jpg" alt="" />
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span class=""><i class="uil uil-heart"></i></span>
+                <span class=""><i class="uil uil-comment-dots"></i></span>
+                <span class=""><i class="uil uil-share-alt"></i></span>
+              </div>
+              <div class="bookmark-button">
+                <span class=""><i class="uil uil-bookmark-full"></i></span>
+              </div>
+            </div>
+            <div class="liked-by post__liked-by-wrapper">
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-3.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-8.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-12.jpg" alt="" /></span>
+              <p class="liked-by__info">
+                Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
+              </p>
+            </div>
+            <div class="caption">
+              <p>
+                <b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Aliquid.
+                <span class="harsh-tag">#lifestyle</span>
+              </p>
+            </div>
+            <div class="comments text-muted">View all 277 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-photo">
+                  <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-8.jpg"
+                    alt="Profile Picture" />
+                </div>
+                <div class="info">
+                  <h3>Lisbeth Riley</h3>
+                  <small>1 DAY AGO</small>
+                </div>
+              </div>
+              <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+            </div>
+            <div class="photo">
+              <img src="/social-web-layout/assets/images/posts/feed-7.jpg" alt="" />
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span class=""><i class="uil uil-heart"></i></span>
+                <span class=""><i class="uil uil-comment-dots"></i></span>
+                <span class=""><i class="uil uil-share-alt"></i></span>
+              </div>
+              <div class="bookmark-button">
+                <span class=""><i class="uil uil-bookmark-full"></i></span>
+              </div>
+            </div>
+            <div class="liked-by post__liked-by-wrapper">
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-3.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-5.jpg" alt="" /></span>
+              <span class="liked-by__img-container"><img class="profile-photo__img" class="profile-photo"
+                  src="/social-web-layout/assets/images/profile/photos/profile-image-11.jpg" alt="" /></span>
+              <p class="liked-by__info">
+                Liked by <b>Ernest Achiever</b> and <b>2, 323 others</b>
+              </p>
+            </div>
+            <div class="caption">
+              <p>
+                <b>Lana Rose</b> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Aliquid.
+                <span class="harsh-tag">#lifestyle</span>
+              </p>
+            </div>
+            <div class="comments text-muted">View all 277 comments</div>
+          </div>
+        </div>
+      </section>
 
-				<section class="section-right">
-    <div class="messages">
-        <div class="heading">
+      <section class="section-right">
+        <div class="messages">
+          <div class="heading">
             <h4>Messages</h4>
             <i class="uil uil-edit messages-icon"></i>
-        </div>
-        <!-- search bar -->
-        <div class="search-bar search-bar-messages">
+          </div>
+          <!-- search bar -->
+          <div class="search-bar search-bar-messages">
             <i class="uil uil-search"></i>
-            <input id="messagesSearch" class="search-input search-bar__input" type="search" placeholder="Search message" />
-        </div>
-        <!-- Messages category -->
-        <div class="category">
+            <input id="messagesSearch" class="search-input search-bar__input" type="search"
+              placeholder="Search message" />
+          </div>
+          <!-- Messages category -->
+          <div class="category">
             <h6 class="category-header category--active">Primary</h6>
             <h6 class="category-header">General</h6>
             <h6 class="category-header message-request">Requests(7)</h6>
-        </div>
-        <!-- Messages -->
-        <div class="message">
+          </div>
+          <!-- Messages -->
+          <div class="message">
             <a href="/profile.html" class="profile-photo">
-                <img
-                    src="/assets/images/profile/photos/profile-image-16.jpg"
-                    alt=""
-                    class="profile-photo__img"
-                />
-                <div class="profile-photo-status"></div>
+              <img src="/social-web-layout/assets/images/profile/photos/profile-image-16.jpg" alt="" class="profile-photo__img" />
+              <div class="profile-photo-status"></div>
             </a>
             <div class="message-body">
-                <h5 class="message-heading">Edem Quist</h5>
-                <p class="message-text text-muted text-bold">Just woke up ;)</p>
+              <h5 class="message-heading">Edem Quist</h5>
+              <p class="message-text text-muted text-bold">Just woke up ;)</p>
             </div>
-        </div>
-        <div class="message">
+          </div>
+          <div class="message">
             <div class="profile-photo">
-                <img
-                    src="/assets/images/profile/photos/profile-image-14.jpg"
-                    alt=""
-                    class="profile-photo__img"
-                />
-                <div class="profile-photo-status profile-photo-status--active"></div>
+              <img src="/social-web-layout/assets/images/profile/photos/profile-image-14.jpg" alt="" class="profile-photo__img" />
+              <div class="profile-photo-status profile-photo-status--active"></div>
             </div>
             <div class="message-body">
-                <h5 class="message-heading">Franca Della</h5>
-                <p class="message-text text-bold">Received. Thanks!</p>
+              <h5 class="message-heading">Franca Della</h5>
+              <p class="message-text text-bold">Received. Thanks!</p>
             </div>
-        </div>
-        <div class="message">
+          </div>
+          <div class="message">
             <div class="profile-photo">
-                <img 
-                    src="/assets/images/profile/photos/profile-image-17.jpg"
-                    alt=""
-                    class="profile-photo__img"
-                />
-                <div class="profile-photo-status"></div>
+              <img src="/social-web-layout/assets/images/profile/photos/profile-image-17.jpg" alt="" class="profile-photo__img" />
+              <div class="profile-photo-status"></div>
             </div>
             <div class="message-body">
-                <h5 class="message-heading">Jane Doe</h5>
-                <p class="message-text text-bold">ok</p>
+              <h5 class="message-heading">Jane Doe</h5>
+              <p class="message-text text-bold">ok</p>
             </div>
-        </div>
-        <div class="message">
+          </div>
+          <div class="message">
             <div class="profile-photo">
-                <img
-                    src="/assets/images/profile/photos/profile-image-13.jpg"
-                    alt=""
-                    class="profile-photo__img"
-                />
-                <div class="profile-photo-status"></div>
+              <img src="/social-web-layout/assets/images/profile/photos/profile-image-13.jpg" alt="" class="profile-photo__img" />
+              <div class="profile-photo-status"></div>
             </div>
             <div class="message-body">
-                <h5 class="message-heading">Daniella Jackson</h5>
-                <p class="message-text text-bold">2 new messages</p>
+              <h5 class="message-heading">Daniella Jackson</h5>
+              <p class="message-text text-bold">2 new messages</p>
             </div>
-        </div>
-        <div class="message">
+          </div>
+          <div class="message">
             <div class="profile-photo">
-                <img
-                    src="/assets/images/profile/photos/profile-image-10.jpg"
-                    alt=""
-                    class="profile-photo__img"
-                />
-                <div class="profile-photo-status profile-photo-status--active"></div>
+              <img src="/social-web-layout/assets/images/profile/photos/profile-image-10.jpg" alt="" class="profile-photo__img" />
+              <div class="profile-photo-status profile-photo-status--active"></div>
             </div>
             <div class="message-body">
-                <h5 class="message-heading">Juliet Makarey</h5>
-                <p class="message-text text-muted text-bold">lol u right</p>
+              <h5 class="message-heading">Juliet Makarey</h5>
+              <p class="message-text text-muted text-bold">lol u right</p>
             </div>
-        </div>
-        <div class="message">
+          </div>
+          <div class="message">
             <div class="profile-photo">
-                <img
-                    src="/assets/images/profile/photos/profile-image-12.jpg"
-                    alt=""
-                    class="profile-photo__img"
-                />
-                <div class="profile-photo-status"></div>
+              <img src="/social-web-layout/assets/images/profile/photos/profile-image-12.jpg" alt="" class="profile-photo__img" />
+              <div class="profile-photo-status"></div>
             </div>
             <div class="message-body">
-                <h5 class="message-heading">Chantel Meiza</h5>
-                <p class="message-text text-bold">Birthday tommorow!</p>
+              <h5 class="message-heading">Chantel Meiza</h5>
+              <p class="message-text text-bold">Birthday tommorow!</p>
             </div>
+          </div>
         </div>
+        <!-- Frient requests -->
+        <div class="friend-requests">
+          <h4 class="friend-requests-heading">Requests</h4>
+          <div class="request">
+            <div class="request-info">
+              <a href="/profile.html" class="profile-photo">
+                <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-11.jpg" alt="" />
+              </a>
+              <div>
+                <h5>Tobin Lowell</h5>
+                <p class="text-muted">2 mutural friends</p>
+              </div>
+            </div>
+            <div class="request-btns">
+              <button class="btn btn-primary">Accept</button>
+              <button class="btn">Declain</button>
+            </div>
+          </div>
+          <div class="request">
+            <div class="request-info">
+              <div class="profile-photo">
+                <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-9.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Haja Bintu</h5>
+                <p class="text-muted">1 mutural friends</p>
+              </div>
+            </div>
+            <div class="request-btns">
+              <button class="btn btn-primary">Accept</button>
+              <button class="btn">Declain</button>
+            </div>
+          </div>
+          <div class="request">
+            <div class="request-info">
+              <div class="profile-photo">
+                <img class="profile-photo__img" src="/social-web-layout/assets/images/profile/photos/profile-image-15.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Benji Aurel</h5>
+                <p class="text-muted">6 mutural friends</p>
+              </div>
+            </div>
+            <div class="request-btns">
+              <button class="btn btn-primary">Accept</button>
+              <button class="btn">Declain</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-     <!-- Frient requests -->
-     <div class="friend-requests">
-        <h4 class="friend-requests-heading">Requests</h4>
-        <div class="request">
-            <div class="request-info">
-                <a href="/profile.html" class="profile-photo">
-                    <img class="profile-photo__img"
-                        src="/assets/images/profile/photos/profile-image-11.jpg"
-                        alt=""
-                    />
-                </a>
-                <div>
-                    <h5>Tobin Lowell</h5>
-                    <p class="text-muted">2 mutural friends</p>
-                </div>
-            </div>
-            <div class="request-btns">
-                <button class="btn btn-primary">Accept</button>
-                <button class="btn">Declain</button>
-            </div>
-        </div>
-        <div class="request">
-            <div class="request-info">
-                <div class="profile-photo">
-                    <img class="profile-photo__img"
-                        src="/assets/images/profile/photos/profile-image-9.jpg"
-                        alt=""
-                    />
-                </div>
-                <div>
-                    <h5>Haja Bintu</h5>
-                    <p class="text-muted">1 mutural friends</p>
-                </div>
-            </div>
-            <div class="request-btns">
-                <button class="btn btn-primary">Accept</button>
-                <button class="btn">Declain</button>
-            </div>
-        </div>
-        <div class="request">
-            <div class="request-info">
-                <div class="profile-photo">
-                    <img class="profile-photo__img"
-                        src="/assets/images/profile/photos/profile-image-15.jpg"
-                        alt=""
-                    />
-                </div>
-                <div>
-                    <h5>Benji Aurel</h5>
-                    <p class="text-muted">6 mutural friends</p>
-                </div>
-            </div>
-            <div class="request-btns">
-                <button class="btn btn-primary">Accept</button>
-                <button class="btn">Declain</button>
-            </div>
-        </div>
-       
-    </div>
-</section>
+  </main>
 
-			</div>
-		</main>
+  <!-- theme -->
+  <!-- theme -->
+  <div class="customize-theme is-hidden">
+    <div class="card">
+      <h2>customize your view</h2>
+      <p class="text-muted">Manage your font size, color and background.</p>
 
-
-		<!-- theme -->
-		<!-- theme -->
-<div class="customize-theme is-hidden">
-  <div class="card">
-    <h2>customize your view</h2>
-    <p class="text-muted">Manage your font size, color and background.</p>
-
-    <!-- font-size -->
-    <div class="font-size">
-      <h4>Font size</h4>
-      <div>
-        <h6>Aa</h6>
-        <div class="choose-size">
-          <span class="font-size-1"></span>
-          <span class="font-size-2"></span>
-          <span class="font-size-3 active"></span>
-          <span class="font-size-4"></span>
-          <span class="font-size-5"></span>
+      <!-- font-size -->
+      <div class="font-size">
+        <h4>Font size</h4>
+        <div>
+          <h6>Aa</h6>
+          <div class="choose-size">
+            <span class="font-size-1"></span>
+            <span class="font-size-2"></span>
+            <span class="font-size-3 active"></span>
+            <span class="font-size-4"></span>
+            <span class="font-size-5"></span>
+          </div>
+          <h3>Aa</h3>
         </div>
-        <h3>Aa</h3>
       </div>
-    </div>
 
-    <!-- primary colors -->
-    <div class="color">
-      <h4>Color</h4>
-      <div class="choose-color">
-        <span class="color-1"></span>
-        <span class="color-2"></span>
-        <span class="color-3 active"></span>
-        <span class="color-4"></span>
-        <span class="color-5"></span>
+      <!-- primary colors -->
+      <div class="color">
+        <h4>Color</h4>
+        <div class="choose-color">
+          <span class="color-1"></span>
+          <span class="color-2"></span>
+          <span class="color-3 active"></span>
+          <span class="color-4"></span>
+          <span class="color-5"></span>
+        </div>
       </div>
-    </div>
 
-    <div class="background">
-      <h4>Background</h4>
-      <div class="choose-bg">
-        <div class="bg-1 active">
-          <span></span>
-          <h5 for="bg-1">Light</h5>
-        </div>
-        <div class="bg-2">
-          <span></span>
-          <h5>Dim</h5>
-        </div>
-        <div class="bg-3">
-          <span></span>
-          <h5 for="bg-3">Lights out</h5>
+      <div class="background">
+        <h4>Background</h4>
+        <div class="choose-bg">
+          <div class="bg-1 active">
+            <span></span>
+            <h5 for="bg-1">Light</h5>
+          </div>
+          <div class="bg-2">
+            <span></span>
+            <h5>Dim</h5>
+          </div>
+          <div class="bg-3">
+            <span></span>
+            <h5 for="bg-3">Lights out</h5>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
+  <script src="/assets/js/main.js"></script>
 
-		<script src="/assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const storiesContainer = document.querySelector(".stories");
+      if (storiesContainer) {
+        const storiesArray = storiesContainer.querySelectorAll(".story");
+        storiesArray.forEach((item) => {
+          console.log(item.getAttribute("data-image"));
+          item.style.backgroundImage = `url("${item.getAttribute(
+            "data-image"
+          )}")`;
+        });
+      }
+    });
+  </script>
+</body>
 
-		<script>
-			document.addEventListener("DOMContentLoaded", () => {
-				const storiesContainer = document.querySelector(".stories");
-				if(storiesContainer) {
-					const storiesArray = storiesContainer.querySelectorAll(".story");
-					storiesArray.forEach((item) => {
-						console.log(item.getAttribute("data-image"))
-						item.style.backgroundImage = `url("${item.getAttribute("data-image")}")`;
-					});
-				}
-			});
-		</script>
-	</body>
 </html>
